@@ -26,3 +26,8 @@ class ArbitraryName(ConanFile):
     def package(self):
         self.copy("catch.hpp", "include", path.join(self.ZIP_FOLDER_NAME, 'single_include'))
         self.copy("catch_with_main.hpp", "include", path.join(self.ZIP_FOLDER_NAME, 'include'))
+
+    def package_info(self):
+        self.cpp_info.libdirs = []
+        self.cpp_info.resdirs = []
+        
