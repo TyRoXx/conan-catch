@@ -11,8 +11,8 @@ class Catch(ConanFile):
     license = "Boost"
     url="http://github.com/TyRoXx/conan-catch"
 
-    ZIP_FOLDER_NAME = "Catch-1.5.0"
-    ZIP_URL_NAME = 'V1.5.0.zip'
+    ZIP_FOLDER_NAME = "Catch-{0}".format(version)
+    ZIP_URL_NAME = 'V{0}.zip'.format(version)
     FILE_SHA = '4c0559ef05f9caa08eb2357944135ec3752911627b5908636ce18399a41a12e6'
 
     def source(self):
