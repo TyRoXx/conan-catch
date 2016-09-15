@@ -6,14 +6,14 @@ from conans.tools import download, unzip, check_sha256
 
 class Catch(ConanFile):
     name = "catch"
-    version = "1.5.0"
+    version = "1.5.6"
     branch = "stable"
     license = "Boost"
     url="http://github.com/TyRoXx/conan-catch"
 
     ZIP_FOLDER_NAME = "Catch-{0}".format(version)
-    ZIP_URL_NAME = 'V{0}.zip'.format(version)
-    FILE_SHA = '4c0559ef05f9caa08eb2357944135ec3752911627b5908636ce18399a41a12e6'
+    ZIP_URL_NAME = 'v{0}.zip'.format(version)
+    FILE_SHA = '6c303fba75a949c2693ad85f6c604f06396622e2e83e54cdb3c6f6f9926cb758'
 
     def source(self):
         zip_name = "catch.zip"

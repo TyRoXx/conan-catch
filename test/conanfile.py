@@ -4,7 +4,7 @@ from conans import ConanFile, CMake
 
 class CatchPackageTest(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
-    requires = "catch/1.5.0@demo/testing"
+    requires = "catch/1.5.6@demo/testing"
     generators = "cmake"
 
     def build(self):
